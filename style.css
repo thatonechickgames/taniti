@@ -1,0 +1,531 @@
+:root {
+
+    .lato-thin {
+        font-family: "Lato", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+      
+    .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    }
+    
+    .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+    
+    .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    }
+    
+    .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    }
+    
+    .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    }
+      
+    .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    }
+    
+    .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    }
+    
+    .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    }
+
+    .farro-light {
+        font-family: "Farro", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+      
+    .farro-regular {
+    font-family: "Farro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    .farro-medium {
+    font-family: "Farro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    }
+    
+    .farro-bold {
+    font-family: "Farro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+    
+    --color-cerulean: #0081a7ff;
+    --color-blue-munsell: #0098b0ff;
+    --color-verdigris: #00afb9ff;
+    --color-tiffany-blue: #a3e1d9ff;
+    --color-nyanza: #d0efdbff;
+    --color-light-yellow: #fdfcdcff;
+    --color-light-orange: #fed9b7ff;
+    --color-melon: #f7a58fff;
+    --color-coral-pink: #f48b7bff;
+    --color-bittersweet: #f07167ff;
+
+}
+
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    position: relative;
+    top: 150px;
+    
+}
+.header{
+    float: left;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin:0;
+    box-sizing: border-box;   
+}
+
+#logo {
+    display: flex;
+    flex: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 20%;
+    height: 150px;
+}
+
+#nav {
+    display: flex;
+    flex: row, nowrap;
+    background-color: var(--color-blue-munsell);
+    height: 150px;
+    width: 80%;
+    align-content: center;
+}
+
+h1{
+    font-family: "Farro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-cerulean);
+}
+
+h2 {
+    font-family: "Farro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+}
+
+#navlist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: var(--color-blue-munsell);
+}
+
+.mainpage a {
+    color: black;
+    text-decoration: none; 
+}
+
+.topnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-left: 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: var(--color-bittersweet);
+    text-decoration: underline;
+}
+
+.topnav a.active {
+    color: var(--color-melon);
+    text-decoration: underline;
+}
+
+.searchbar {
+    display: flex;
+    flex: row-reverse, nowrap;
+    width: 40%;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+}
+
+.searchbar input[type=text] {
+    width: 100%;
+    margin-left: 20%;
+    margin-right: 10px;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.searchbar button {
+    padding: 6px 10px;
+    margin: 0;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+  
+.topnav button:hover {
+    background: #ccc;
+}
+
+.welcome {
+    width: 100%;
+    float: left;
+    display:flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: var(--color-blue-munsell);
+    text-shadow: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.welcome h1 {
+    font-family: "Farro", sans-serif;
+    font-size: 1.6em;
+    text-decoration: underline;
+    color: white;
+}
+.welcome h2{
+    font-family: "Farro", sans-serif;
+    font-size: 1.25em;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.welcome h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+.lodgingtextboxes {
+    width: 100%;
+    float: left;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    font-size: 1em;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.lodgingtextboxes h2{
+    color: black;
+    font-size: 2em;
+    margin: 0;
+}
+
+.lodgingtextboxes p {
+    line-height: 1.5em;
+    padding: 0 5% 0 5%;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5em;
+}
+.lodgingpanoramicimage {
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px; 
+}
+
+.panoramicimage {
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    height: 600px; 
+}
+
+.pano {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.maincontainer {
+    display:flex;
+    flex-direction: row, nowrap;
+    float: left;
+    width: 100%;
+    min-height: 250px;
+    max-height: 700px;
+    height: auto;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+.imagecontainer {
+    width: 50%;
+    max-height: 700px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: table; 
+}
+
+.imagecontainer img{
+    width: 100%;
+    max-height:700px;
+    object-fit: contain;
+}
+
+.desccontainer {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.desccontainer p {
+    line-height: 1.5em;
+    padding: 0 5% 0 5%;
+    text-align: left;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5em;
+}
+
+.desccontainer h2 {
+    height: auto;
+    line-height: 1;
+    padding: 0 5% 0 5%;
+}
+
+.entcontainer h2 {
+    font-family: "Farro", sans-serif;
+    font-size: 1.5em;
+    line-height: 1;
+    padding: 0 5% 0 5%;
+}
+
+.entcontainer {
+    width: 100%;
+    min-height: 150px;
+    max-height: 700px;
+    height: auto;
+    border: solid, 1px, black;
+    font-family: "Lato", sans-serif;
+    float: left;
+    display: flex;
+    align-items: center;
+    flex: row, nowrap;
+    box-sizing: border-box;
+}
+
+.entcontainer p {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+}
+.entdesccnt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 200px;
+    
+}
+.entimagecnt {
+    width: 30%;
+    max-height: 199px;
+    margin: 0;
+    padding: 0;
+    display: table; 
+}
+
+.entimagecnt img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.infocont {
+    width: 100%;
+    min-height: 200px;
+    font-family: "Lato", sans-serif;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.infotitle {
+    width: 100%;
+    height: 50px;
+    font-family: "Farro", sans-serif;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+}
+
+.infocont h1{
+    color: black;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+.infocont h2 {
+    font-family: "Farro", sans-serif;
+    font-size: 1.5em;
+    line-height: 1;
+    padding: 0 5% 0 5%;
+}
+
+.infocont table {
+    text-align: justify;
+    font-size: 1.25em;
+    width: 72%;
+    padding: 1%;
+}
+.infocont td {
+    padding: 2%;
+}
+
+#shopping {
+    width: 70%;
+    text-align: center;
+}
+#c1 {
+    align-content: first baseline;
+    text-align: right;
+    width: 250px;
+    height: fit-content;
+}
+
+
+.legal {
+    width: 100%;
+    min-height: 400px;
+    max-height: 700px;
+    margin-top: 10%;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: black;
+    font-size: 1.2em;
+}
+.footer {
+    float: left;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    height: 75px;
+    margin:0;
+    box-sizing: border-box;
+    background-color: var(--color-blue-munsell);
+}
+#legalfooter {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+#footernav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: var(--color-blue-munsell);
+}
+
+.bottomnav a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bottomnav a:hover {
+    color: var(--color-bittersweet);
+    text-decoration: underline;
+}
+
+.bottomnav a.active {
+    color: var(--color-melon);
+    text-decoration: underline;
+}
